@@ -70,7 +70,7 @@ class TestAssignmentOne(unittest.TestCase):
         self.assertTrue(asgmt.is_even(0))
         self.assertTrue(asgmt.is_even(2))
 
-asgmt = importlib.import_module("answers_solved")
+asgmt = importlib.import_module("answers")
 suite = unittest.TestLoader().loadTestsFromTestCase(TestAssignmentOne)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
